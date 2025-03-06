@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://kit.fontawesome.com/437d09de51.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-------------header-------------->>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="/images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects/Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Dhanunjay</span> <br>From Hyderabad</h1>
+        </div>
+       </div> 
+    </div>  
+    <!--------------about------------->  
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/about.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h2>
+                    <p>I’m a passionate Developer with a keen eye for detail and a drive for creating innovative solutions. 
+                        With a background in Web Development and Cyber Security, I thrive on turning ideas into reality and delivering impactful results. 
+                        I’m always eager to learn, grow, and take on new challenges. Let’s create something amazing together!</p>   
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div> 
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>Poster Design</span><br>Designing Event/Movie Posters</li>
+                                <li><span>Cyber Security</span><br>Fundamentals of Cyber Security</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>None</span><br>currently a Freelancer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025-2021</span><br>B.Tech from AVNIET, Hyderabad.</li>
+                                <li><span>2021-2019</span><br>Intermediate from MJPTBCWRJC, Nizamabad</li>
+                                <li><span>2019</span><br>Class 10 from Swamy vivekananda HS, Adilabad</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>  
+                    <h2>Web Development</h2>
+                    <p>Creating and maintaining websites or web applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>  
+                    <h2>Poster Designing</h2>
+                    <p>Designing Posters for Events, Movies, etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Others</h2>
+                    <p>Photo,Video Editing</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------portfolio----------->>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/pro.png" >
+                <div class="layer">
+                    <h3>Facial Recognition Surveillance</h3>
+                    <p>Surveillance system using Facial Recognition, 
+                        has features like auto shutdown,autolock</p>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>           
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/posters.png" >
+                <div class="layer">
+                    <h3>My Designs</h3>
+                    <p>Movie,Event posters made by Me</p>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/logodesign.png" >
+                <div class="layer">
+                    <h3>Logos</h3>
+                    <p>Logo designs, designed by Me</p>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------contact me---------->>
+<div id="contact" >
+    <div class="container c">
+        <h1 class="s">Contact Me</h1>
+        <p>dhanunjaychukkabotla@gmail.com</p>
+        <p>+91 7981924627</p>
+        <div social-icons>
+            <a href="https://x.com/dhanun7ay?t=5OdY7cESkJot_ylqozpvgw&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/dhanun7ay?igsh=NXhpcmIzYnVqbzNm"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/chukkabotla-dhanunjay?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>     
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");                
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right ="0";
+        }
+        function closemenu(){
+            sidemeu.style.right ="-200px";
+        }          
+    </script> 
+</body>
+</html>
